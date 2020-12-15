@@ -19,16 +19,30 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">CSE 381 Final Project</div>
+        <div id="unity-build-title">Sheep Hunt</div>
       </div>
+    </div>
+    <div>
+      <h1>Sheep Hunt</h1>
+      <p>
+        You are a hungry pack of wolves who have been terrorizing Farmer X’s Sheep ranch at night. You’ve come to an agreement with Farmer X that will let you eat as many sheep as you’d like as long as you meet Farmer X’s demands. Farmer X will let you hunt on his ranch so long as you herd his requested amount of sheep. Farmer X’s demand grows as time goes by. This is a golden opportunity, the farmer is not to be messed with. You do not want to anger the farmer. If you do not meet the farmer’s demands, he will get angry and begin hunting your pack. 
+        To win this game, consume enough sheep to grow large enough to consume the farmer. If the farmer takes out all of your pack before you are able to do so, you will lose.
+      </p>
+      <ul> Controls
+        <li>Shift to Run</li>
+        <li>C to Sneak</li>
+        <li>E to Consume</li>
+        <li>F to Bark</li>
+        <li>1-3 to swap control between wolves.</li>
+      </ul>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/CSE381.loader.js";
+      var loaderUrl = buildUrl + "/FirstUnityGame.loader.js";
       var config = {
-        dataUrl: buildUrl + "/CSE381.data.gz",
-        frameworkUrl: buildUrl + "/CSE381.framework.js.gz",
-        codeUrl: buildUrl + "/CSE381.wasm.gz",
+        dataUrl: buildUrl + "/FirstUnityGame.data",
+        frameworkUrl: buildUrl + "/FirstUnityGame.framework.js",
+        codeUrl: buildUrl + "/FirstUnityGame.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "CSE 381 Final Project",
@@ -67,4 +81,9 @@
       document.body.appendChild(script);
     </script>
   </body>
+  <style>
+    p {text-align: center}
+    h3 {text-align: center}
+    h1 {text-align: center}
+  </style>
 </html>
